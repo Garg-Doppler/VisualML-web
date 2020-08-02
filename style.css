@@ -7,83 +7,12 @@ body {
     margin-left: 800px;
 }
 
+.navbar {
+    min-height: 10px !important
+}
+
 .navindi {
     padding-left: 30px;
-}
-
-.customnav:hover {
-    color: cornsilk;
-}
-
-.customnav {
-    color: rgb(0, 200, 255);
-}
-
-@keyframes fadeInUp {
-    from {
-        transform: translate3d(0, 40px, 0)
-    }
-    to {
-        transform: translate3d(0, 0, 0);
-        opacity: 1
-    }
-}
-
-@-webkit-keyframes fadeInUp {
-    from {
-        transform: translate3d(0, 40px, 0)
-    }
-    to {
-        transform: translate3d(0, 0, 0);
-        opacity: 1
-    }
-}
-
-.animated {
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-fill-mode: both
-}
-
-.animatedFadeInUp {
-    opacity: 0
-}
-
-.fadeInUp {
-    opacity: 0;
-    animation-name: fadeInUp;
-    -webkit-animation-name: fadeInUp;
-}
-
-@keyframes fadeInRight {
-    from {
-        transform: translate3d(-40px, 0, 0)
-    }
-    to {
-        transform: translate3d(0, 0, 0);
-        opacity: 1
-    }
-}
-
-@-webkit-keyframes fadeInRight {
-    from {
-        transform: translate3d(-40px, 0, 0)
-    }
-    to {
-        transform: translate3d(0, 0, 0);
-        opacity: 1
-    }
-}
-
-.animatedFadeInRight {
-    opacity: 0
-}
-
-.fadeInRight {
-    opacity: 0;
-    animation-name: fadeInRight;
-    -webkit-animation-name: fadeInRight;
 }
 
 #mega {
@@ -97,41 +26,25 @@ body {
 }
 
 #logo {
-    margin-top: 14%;
-    margin-left: 15%;
-    margin-right: 5%;
+    margin-top: 2.5%;
+    margin-left: 3%;
 }
 
 #tag {
-    margin-top: 12%;
+    margin-top: 5%;
     margin-left: 5%;
     margin-right: 5%;
-    font-size: 6em;
+    font-size: 2.5em;
     color: midnightblue;
     text-align: center;
 }
 
-#about_nav {
-    font-size: xx-large;
-    margin-top: 5%;
-    margin-left: 50%;
-    display: flex;
-    flex-direction: column;
-}
-
-#demos_nav {
-    font-size: xx-large;
-    margin-top: 5%;
-    margin-left: 45%;
-    display: flex;
-    flex-direction: column;
-}
-
 #about {
-    height: 830px;
+    height: fit-content;
     width: 1425px;
-    margin-top: 30px;
-    padding-top: 10%;
+    margin-top: 15px;
+    padding-top: 3%;
+    padding-bottom: 2%;
     margin-left: -40px;
     padding-left: 100px;
     background-color: #4287f5;
@@ -142,13 +55,15 @@ body {
 }
 
 #demos {
-    height: 2500px;
-    width: 1425px;
-    margin-top: 30px;
-    padding-top: 10%;
+    height: fit-content;
+    width: 106%;
+    margin-top: 10px;
+    padding-top: 2%;
     margin-left: -40px;
     padding-left: 100px;
     background-color: #eb7734;
+    padding-bottom: 2%;
+    margin-bottom: -3%;
 }
 
 #heading2 {

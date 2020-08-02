@@ -39,18 +39,18 @@
     </script>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
         <div id="dsg" class="navbar-brand">
-            <img src="img/dsg.png" width="60px" alt="logo">
+            <img src="img/dsg_logo.png" height="30px" alt="logo">
         </div>
         <div>
-            <ul class="navbar-nav" id="navitems">
+            <ul class="navbar-nav" id="navitems" style="top: 0;">
                 <li class="nav-item navindi">
                     <a class="nav-link" href="#mega">Home</a>
                 </li>
                 <li class="nav-item navindi">
-                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#about_e">About</a>
                 </li>
                 <li class="nav-item navindi">
-                    <a class="nav-link" href="#demos">Demos</a>
+                    <a class="nav-link" href="#demos_e">Demos</a>
                 </li>
                 <li class="nav-item navindi">
                     <a class="nav-link" href="https://dsgiitr.com">DSG</a>
@@ -58,51 +58,33 @@
             </ul>
         </div>
     </nav>
-
-
     <div id="mega">
-        <div class="block wow fadeInUp" data-wow-delay=".2s" id="container1">
+        <div id="container1">
             <div id="logo">
-                <img width="400px" src="img/visualml.png">
+                <img width="120px" src="img/visualml.png">
             </div>
             <div id="tag">
                 <p>Machine Learning in the Browser</p>
             </div>
         </div>
-        <div id="about_nav" class="block wow fadeInUp" data-wow-delay=".2s">
-            <a class="down text-success" href="#about" style="margin-left: -5%;">
-                About
-            </a>
-            <a class="down" href="#about">
-                <i class="fa fa-angle-double-down text-success" aria-hidden="true"></i>
-            </a>
-        </div>
+        <div id="about_e"></div>
     </div>
     <div id="about">
-        <h1 id="heading1" class="block wow fadeInLeft">Visual Machine Learning</h1>
-        <h3 style="margin-right: 20%;margin-top: 5%; " class="block wow fadeInLeft">
+        <h1 id="heading1" class="block wow fadeInLeft">About the Project</h1>
+        <h3 style="margin-right: 20%;margin-top: 2%; " class="block wow fadeInRight">
             Visual Machine Learning contains a set of Machine Learning and Deep Learning interactive visualisation demos for developing intuition. These demos are developed using TensorFlow.js and can be executed directly in your browser. This project is an extension
-            of ML examples from tfjs-examples. We implement new demos, as well as, add additional features into the ones that already existed in TFJS. Visual Machine Learning contains a set of Machine Learning and Deep Learning interactive visualisation
-            demos for developing intuition. These demos are developed using TensorFlow.js and can be executed directly in your browser. This project is an extension of ML examples from tfjs-examples. We implement new demos, as well as, add additional
-            features into the ones that already existed in TFJS.
+            of ML examples from tfjs-examples. We implement new demos, as well as, add additional features into the ones that already existed in TFJS.
         </h3>
-        <div id="demos_nav" class="block wow fadeInUp" data-wow-delay=".2s">
-            <a class="down" href="#demos" style="margin-left: -5%; color: yellow;">
-                Demos
-            </a>
-            <a class="down" href="#demos">
-                <i class="fa fa-angle-double-down" aria-hidden="true" style="color: yellow;"></i>
-            </a>
-        </div>
+        <div id="demos_e"></div>
     </div>
     <div id="demos">
         <h1 id="heading2" class="block wow fadeInLeft">Demos</h1>
         <div class="container">
             <div class="row">
-                <div class="block wow fadeInLeft" style="width: 50%;">
-                    <div class="card col-sm-10" style="margin-top: 40px; padding: 0;">
+                <div class="block wow fadeInLeft" style="width: 33%;">
+                    <div class="card col-sm-12" style="margin-top: 40px; padding: 0; margin-left: -90px;">
                         <div class="card-header box">
-                            <img src="https://predictiveprogrammer.com/wp-content/uploads/2018/06/convolve.gif" style="height: 300px" class="img-fluid image" alt="this is a title">
+                            <img src="https://predictiveprogrammer.com/wp-content/uploads/2018/06/convolve.gif" style="height: 200px" class="img-fluid image" alt="this is a title">
                             <div class="middle">
                                 <a href="https://github.com/dsgiitr/mnist-cnn-demo">
                                     <button type="button" class="butn github">Github</button>
@@ -125,10 +107,10 @@
                     </div>
                 </div>
 
-                <div class="block wow fadeInLeft" style="width: 50%;" data-wow-delay="0.5s">
-                    <div class="card col-sm-10" style="margin-top: 40px; padding: 0;">
+                <div class="block wow fadeInLeft" style="width: 33%;" data-wow-delay="0.5s">
+                    <div class="card col-sm-12" style="margin-top: 40px; padding: 0; margin-left: -45px;">
                         <div class="card-header box">
-                            <img src="https://miro.medium.com/max/1313/1*Fe6z8VdUS6laTd6Ev3EohQ.gif" style="height: 300px" class="img-fluid image" alt="this is a title">
+                            <img src="https://miro.medium.com/max/1313/1*Fe6z8VdUS6laTd6Ev3EohQ.gif" style="height: 200px" class="img-fluid image" alt="this is a title">
                             <div class="middle">
                                 <a href="https://github.com/dsgiitr/neural-style-transfer-tfjs">
                                     <button type="button" class="butn github">Github</button>
@@ -150,12 +132,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="block wow fadeInLeft" style="width: 50%;">
-                    <div class="card col-sm-10" style="margin-top: 40px; padding: 0;">
+                <div class="block wow fadeInLeft" style="width: 33%;" data-wow-delay="1s">
+                    <div class="card col-sm-12" style="margin-top: 40px; padding: 0; margin-left: ;">
                         <div class="card-header box">
-                            <img src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/02/ANN-Graph.gif" style="height: 300px" class="img-fluid image" alt="this is a title">
+                            <img src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/02/ANN-Graph.gif" style="height: 200px" class="img-fluid image" alt="this is a title">
                             <div class="middle">
                                 <a href="https://github.com/dsgiitr/ann-demo">
                                     <button type="button" class="butn github">Github</button>
@@ -177,11 +157,12 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="block wow fadeInLeft" style="width: 50%;" data-wow-delay="0.5s">
-                    <div class="card col-sm-10" style="margin-top: 40px; padding: 0;">
+            </div>
+            <div class="row">
+                <div class="block wow fadeInLeft" style="width: 33%;">
+                    <div class="card col-sm-12" style="margin-top: 40px; padding: 0; margin-left: -90px;">
                         <div class="card-header box">
-                            <img src="https://docs.aws.amazon.com/sagemaker/latest/dg/images/debugger-cnn-autoencoder-plot.gif" style="height: 300px" class="img-fluid image" alt="this is a title">
+                            <img src="https://docs.aws.amazon.com/sagemaker/latest/dg/images/debugger-cnn-autoencoder-plot.gif" style="height: 200px" class="img-fluid image" alt="this is a title">
                             <div class="middle">
                                 <a href="https://github.com/dsgiitr/autoencoder-demo">
                                     <button type="button" class="butn github">Github</button>
@@ -203,12 +184,11 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="block wow fadeInLeft" style="width: 50%;">
-                    <div class="card col-sm-10" style="margin-top: 40px; padding: 0;">
+
+                <div class="block wow fadeInLeft" style="width: 33%;" data-wow-delay="0.5s">
+                    <div class="card col-sm-12" style="margin-top: 40px; padding: 0; margin-left: -45px;">
                         <div class="card-header box">
-                            <img src="https://mlfromscratch.com/content/images/2019/12/activation-functions.gif" style="height: 300px" class="img-fluid image" alt="this is a title">
+                            <img src="https://mlfromscratch.com/content/images/2019/12/activation-functions.gif" style="height: 200px" class="img-fluid image" alt="this is a title">
                             <div class="middle">
                                 <a href="https://github.com/dsgiitr/vanishing-gradients-demo">
                                     <button type="button" class="butn github">Github</button>
@@ -230,11 +210,10 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="block wow fadeInLeft" style="width: 50%;" data-wow-delay="0.5s">
-                    <div class="card col-sm-10" style="margin-top: 40px; padding: 0;">
+                <div class="block wow fadeInLeft" style="width: 33%;" data-wow-delay="1s">
+                    <div class="card col-sm-12" style="margin-top: 40px; padding: 0; margin-left: ;">
                         <div class="card-header box">
-                            <img src="https://miro.medium.com/max/700/1*tWvmE8FDt--msSIsGZSzXA.gif" style="height: 300px" class="img-fluid image" alt="this is a title">
+                            <img src="https://miro.medium.com/max/700/1*tWvmE8FDt--msSIsGZSzXA.gif" style="height: 200px" class="img-fluid image" alt="this is a title">
                             <div class="middle">
                                 <a href="https://github.com/dsgiitr/svm-demo">
                                     <button type="button" class="butn github">Github</button>
@@ -258,10 +237,10 @@
                 </div>
             </div>
             <div class="row">
-                <div class="block wow fadeInLeft" style="width: 50%;">
-                    <div class="card col-sm-10" style="margin-top: 40px; padding: 0;">
+                <div class="block wow fadeInLeft" style="width: 33%;">
+                    <div class="card col-sm-12" style="margin-top: 40px; padding: 0; margin-left: -90px;">
                         <div class="card-header box">
-                            <img src="https://miro.medium.com/max/692/1*-Ri2rnDeXwovwu3tpTzaFw.gif" style="height: 300px" class="img-fluid image" alt="this is a title">
+                            <img src="https://miro.medium.com/max/692/1*-Ri2rnDeXwovwu3tpTzaFw.gif" style="height: 200px" class="img-fluid image" alt="this is a title">
                             <div class="middle">
                                 <a href="https://github.com/dsgiitr/pca-demo">
                                     <button type="button" class="butn github">Github</button>
@@ -284,10 +263,10 @@
                     </div>
                 </div>
 
-                <div class="block wow fadeInLeft" style="width: 50%;" data-wow-delay="0.5s">
-                    <div class="card col-sm-10" style="margin-top: 40px; padding: 0;">
+                <div class="block wow fadeInLeft" style="width: 33%;" data-wow-delay="0.5s">
+                    <div class="card col-sm-12" style="margin-top: 40px; padding: 0; margin-left: -45px;">
                         <div class="card-header box">
-                            <img src="https://miro.medium.com/max/1600/1*PQ8tdohapfm-YHlrRIRuOA.gif" style="height: 300px" class="img-fluid image" alt="this is a title">
+                            <img src="https://miro.medium.com/max/1600/1*PQ8tdohapfm-YHlrRIRuOA.gif" style="height: 200px" class="img-fluid image" alt="this is a title">
                             <div class="middle">
                                 <a href="https://github.com/dsgiitr/logistic-regression-demo">
                                     <button type="button" class="butn github">Github</button>
