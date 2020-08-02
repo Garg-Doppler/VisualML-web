@@ -1,23 +1,76 @@
+html,
 body {
-    padding: 40px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
     overflow-x: hidden;
 }
 
-#navitems {
-    margin-left: 800px;
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 40px, 0)
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
 }
 
-.navbar {
-    min-height: 10px !important
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 40px, 0)
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
 }
 
-.navindi {
-    padding-left: 30px;
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
 }
 
-#mega {
-    display: flex;
-    flex-direction: column;
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+@keyframes fadeInRight {
+    from {
+        transform: translate3d(-40px, 0, 0)
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInRight {
+    from {
+        transform: translate3d(-40px, 0, 0)
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+.animatedFadeInRight {
+    opacity: 0
+}
+
+.fadeInRight {
+    opacity: 0;
+    animation-name: fadeInRight;
+    -webkit-animation-name: fadeInRight;
 }
 
 #container1 {
@@ -25,45 +78,39 @@ body {
     flex-direction: row;
 }
 
+@media only screen and (max-width: 635px) {
+    #container1 {
+        flex-direction: column;
+    }
+}
+
 #logo {
-    margin-top: 2.5%;
-    margin-left: 3%;
+    margin-top: 14%;
 }
 
 #tag {
-    margin-top: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
-    font-size: 2.5em;
+    margin-top: 12%;
+    font-size: 7vw;
     color: midnightblue;
-    text-align: center;
+    text-align: center
 }
 
-#about {
-    height: fit-content;
-    width: 1425px;
-    margin-top: 15px;
-    padding-top: 3%;
-    padding-bottom: 2%;
-    margin-left: -40px;
-    padding-left: 100px;
-    background-color: #4287f5;
+#about_nav {
+    font-size: xx-large;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#demos_nav {
+    font-size: xx-large;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 #heading1 {
     color: white;
-}
-
-#demos {
-    height: fit-content;
-    width: 106%;
-    margin-top: 10px;
-    padding-top: 2%;
-    margin-left: -40px;
-    padding-left: 100px;
-    background-color: #eb7734;
-    padding-bottom: 2%;
-    margin-bottom: -3%;
 }
 
 #heading2 {
@@ -89,7 +136,7 @@ body {
     opacity: 0;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 47.5%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
