@@ -6,71 +6,8 @@ body {
     overflow-x: hidden;
 }
 
-@keyframes fadeInUp {
-    from {
-        transform: translate3d(0, 40px, 0)
-    }
-    to {
-        transform: translate3d(0, 0, 0);
-        opacity: 1
-    }
-}
-
-@-webkit-keyframes fadeInUp {
-    from {
-        transform: translate3d(0, 40px, 0)
-    }
-    to {
-        transform: translate3d(0, 0, 0);
-        opacity: 1
-    }
-}
-
-.animated {
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-fill-mode: both
-}
-
-.animatedFadeInUp {
-    opacity: 0
-}
-
-.fadeInUp {
-    opacity: 0;
-    animation-name: fadeInUp;
-    -webkit-animation-name: fadeInUp;
-}
-
-@keyframes fadeInRight {
-    from {
-        transform: translate3d(-40px, 0, 0)
-    }
-    to {
-        transform: translate3d(0, 0, 0);
-        opacity: 1
-    }
-}
-
-@-webkit-keyframes fadeInRight {
-    from {
-        transform: translate3d(-40px, 0, 0)
-    }
-    to {
-        transform: translate3d(0, 0, 0);
-        opacity: 1
-    }
-}
-
-.animatedFadeInRight {
-    opacity: 0
-}
-
-.fadeInRight {
-    opacity: 0;
-    animation-name: fadeInRight;
-    -webkit-animation-name: fadeInRight;
+#navitems {
+    margin-left: 800px;
 }
 
 #container1 {
@@ -84,15 +21,54 @@ body {
     }
 }
 
+.navbar {
+    min-height: 10px !important
+}
+
+.navindi {
+    padding-left: 30px;
+}
+
 #logo {
-    margin-top: 14%;
+    margin-top: 0%;
+    margin-left: 10%;
+    margin-bottom: 2%;
+    width: 120px;
 }
 
 #tag {
-    margin-top: 12%;
-    font-size: 7vw;
+    margin-top: 2%;
+    margin-left: 6%;
+    font-size: 2.5em;
     color: midnightblue;
-    text-align: center
+    width: 800px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.portrait {
+    height: auto;
+    width: 80px;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+.landscape {
+    height: auto;
+    width: 120px;
+    margin-top: 15px;
+    margin-right: 20px;
+    margin-left: 50px;
+}
+
+.square {
+    height: auto;
+    width: 100px;
+    margin-top: 15px;
+    margin-right: 20px;
 }
 
 #about_nav {

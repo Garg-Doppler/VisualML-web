@@ -19,25 +19,23 @@
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="img/dsg_logo.png" alt="">
+                <img src="img/dsg_logo.png" height="30px" alt="dsg">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#mega">Home
-                      <span class="sr-only">(current)</span>
-                    </a>
+                <ul class="navbar-nav ml-auto" id="navitems" style="top: 0;">
+                    <li class="nav-item navindi">
+                        <a class="nav-link" href="#mega">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#aboutus">About</a>
+                    <li class="nav-item navindi">
+                        <a class="nav-link" href="#about_e">About</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#demos">Demos</a>
+                    <li class="nav-item navindi">
+                        <a class="nav-link" href="#demos_e">Demos</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item navindi">
                         <a class="nav-link" href="https://dsgiitr.com">DSG</a>
                     </li>
                 </ul>
@@ -47,58 +45,50 @@
 
     <div class="container" style="padding: 80px 0 0 0; margin: 0;">
         <div class="row">
-            <div class="block wow fadeInUp" data-wow-delay=".2s" id="container1">
-                <div id="logo" class="col-md-6 col-11">
-                    <img src="img/visualml.png" class="img-fluid" style="padding-left: 15%;" id="img-logo">
+            <div id="container1">
+                <div id="logo">
+                    <img src="img/visualml.png" class="img-fluid" id="img-logo">
                 </div>
-                <div id="tag" class="col-12 col-md-5 offset-md-1">
+                <div id="tag">
                     <p>Machine Learning in the Browser</p>
                 </div>
+                <div class="landscape">
+                    <img src="img/tfjs.jpeg" class="img-fluid block wow fadeInUp" data-wow-delay="0.5s">
+                </div>
+                <div class="portrait">
+                    <img src="img/chart.jpeg" class="img-fluid block wow fadeInUp" data-wow-delay="1s">
+                </div>
+                <div class="square">
+                    <img src="img/plotly.png" class="img-fluid block wow fadeInUp" data-wow-delay="1.5s">
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div id="about_nav" class="block wow fadeInUp" data-wow-delay=".2s">
-                <a class="down text-success" href="#aboutus">
-                About
-            </a>
-                <a class="down" href="#aboutus" style="text-align: center;">
-                    <i class="fa fa-angle-double-down text-success" aria-hidden="true"></i>
-                </a>
-            </div>
+            <div id="about_e"></div>
         </div>
     </div>
     <div style="background-color: #4287f5;" id="aboutus">
         <div class="container" style="padding: 0; margin: 0;">
             <div class="row" style="text-align: center;">
-                <h1 id="heading1" class="block wow fadeInLeft" style="padding: 20px 25%; font-size: 4vw; margin-left: 10%;">Visual Machine Learning</h1>
+                <h1 id="heading1" class="block wow fadeInLeft" style="padding-top: 60px; font-size: 4vw; margin-left: 10%;">About the Project</h1>
             </div>
             <div class="row">
-                <h5 style="font-size: 3vw; padding: 10px 10%; margin-left: 10%;" class="block wow fadeInLeft">
-                    Visual Machine Learning contains a set of Machine Learning and Deep Learning interactive visualisation demos for developing intuition. These demos are developed using TensorFlow.js and can be executed directly in your browser.<br/>                    This project is an extension of ML examples from tfjs-examples. We implement new demos, as well as, add additional features into the ones that already existed in TFJS.<br/> Visual Machine Learning contains a set of Machine Learning
-                    and Deep Learning interactive visualisation demos for developing intuition. These demos are developed using TensorFlow.js and can be executed directly in your browser. <br/>This project is an extension of ML examples from tfjs-examples.
-                    We implement new demos, as well as, add additional features into the ones that already existed in TFJS.
+                <h5 style="font-size: 3vw; padding-left: 10%; padding-top: 10px; padding-bottom: 20px;" class="block wow fadeInRight">
+                    Visual Machine Learning contains a set of Machine Learning and Deep Learning interactive visualisation demos for developing intuition. These demos are developed using TensorFlow.js and can be executed directly in your browser.<br/>This
+                    project is an extension of ML examples from tfjs-examples. We implement new demos, as well as, add additional features into the ones that already existed in TFJS.
                 </h5>
             </div>
-            <div class="row">
-                <div id="demos_nav" class="block wow fadeInUp" data-wow-delay=".2s">
-                    <a class="down text-warning" href="#demos" style="margin: auto;">Demos</a>
-                    <a class="down" href="#about" style="text-align: center;">
-                        <i class="fa fa-angle-double-down text-warning" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </div>
+            <div id="demos_e" style="margin-bottom: 10px;"></div>
         </div>
     </div>
-    <div style="background-color: #eb7734; width: 100%;" id="demos">
+    <div style="background-color: #eb7734; width: 100%; margin-bottom: 20px; padding-bottom: 20px;" id="demos">
         <div class="container-fluid" style="padding: 0; margin: 0;">
             <div class="row">
-                <h1 id="heading2" class="block wow fadeInLeft" style="margin: auto; padding-top: 30px;">Demos</h1>
+                <h1 id="heading2" class="block wow fadeInLeft" style="padding-top: 50px; font-size: 4vw; margin-left: 10%;">Demos</h1>
             </div>
             <div class="row justify-content-around" style="padding-left: 10%;">
-                <div class="block wow fadeInLeft">
-                    <div class="card col-md-10 col-11" style="margin-top: 40px; padding: 0;">
+                <div class="block wow fadeInLeft" style="width: 33%;">
+                    <div class="card col-sm-10" style="margin-top: 40px; padding: 0;">
                         <div class="card-header box">
-                            <img src="https://predictiveprogrammer.com/wp-content/uploads/2018/06/convolve.gif" style="width:500px; height: 310px;" class="img-fluid image" alt="this is a title">
+                            <img src="https://predictiveprogrammer.com/wp-content/uploads/2018/06/convolve.gif" style="height: 200px" class="img-fluid image" alt="this is a title">
                             <div class="middle">
                                 <a href="https://github.com/dsgiitr/mnist-cnn-demo">
                                     <button type="button" class="butn github">Github</button>
@@ -111,8 +101,8 @@
                         <div class="card-body">
                             <h4>
                                 <a>
-                            Convolutional Neural Network
-                        </a>
+                                    Convolutional Neural Network
+                                </a>
                             </h4>
                             <p>
                                 Train and Test a CNN and visualise its layers in 3D.
@@ -121,10 +111,10 @@
                     </div>
                 </div>
 
-                <div class="block wow fadeInLeft" data-wow-delay="0.5s">
-                    <div class="card col-md-10 col-11" style="margin-top: 40px; padding: 0;">
+                <div class="block wow fadeInLeft" style="width: 33%;" data-wow-delay="0.5s">
+                    <div class="card col-sm-10" style="margin-top: 40px; padding: 0;">
                         <div class="card-header box">
-                            <img src="https://miro.medium.com/max/1313/1*Fe6z8VdUS6laTd6Ev3EohQ.gif" class="img-fluid image" alt="this is a title">
+                            <img src="https://miro.medium.com/max/1313/1*Fe6z8VdUS6laTd6Ev3EohQ.gif" style="height: 200px" class="img-fluid image" alt="this is a title">
                             <div class="middle">
                                 <a href="https://github.com/dsgiitr/neural-style-transfer-tfjs">
                                     <button type="button" class="butn github">Github</button>
@@ -137,8 +127,8 @@
                         <div class="card-body">
                             <h4>
                                 <a>
-                            Neural Style Transfer
-                        </a>
+                                    Neural Style Transfer
+                                </a>
                             </h4>
                             <p>
                                 Perform Neural Style Transfer on a variety of images.
@@ -146,12 +136,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row justify-content-around" style="padding-left: 10%;">
-                <div class="block wow fadeInLeft">
-                    <div class="card col-md-10 col-11" style="margin-top: 40px; padding: 0;">
+                <div class="block wow fadeInLeft" style="width: 33%;" data-wow-delay="1s">
+                    <div class="card col-sm-10" style="margin-top: 40px; padding: 0;">
                         <div class="card-header box">
-                            <img src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/02/ANN-Graph.gif" style="width:500px; height: 310px;" class="img-fluid image" alt="this is a title">
+                            <img src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/02/ANN-Graph.gif" style="height: 200px" class="img-fluid image" alt="this is a title">
                             <div class="middle">
                                 <a href="https://github.com/dsgiitr/ann-demo">
                                     <button type="button" class="butn github">Github</button>
@@ -164,8 +152,8 @@
                         <div class="card-body">
                             <h4>
                                 <a>
-                            Artificial Neural Network
-                        </a>
+                                    Artificial Neural Network
+                                </a>
                             </h4>
                             <p>
                                 Train and Test an ANN and visualise its structure.
@@ -173,11 +161,12 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="block wow fadeInLeft" data-wow-delay="0.5s">
-                    <div class="card col-md-10 col-11" style="margin-top: 40px; padding: 0;">
+            </div>
+            <div class="row justify-content-around" style="padding-left: 10%;">
+                <div class="block wow fadeInLeft" style="width: 33%;">
+                    <div class="card col-sm-10" style="margin-top: 40px; padding: 0;">
                         <div class="card-header box">
-                            <img src="https://docs.aws.amazon.com/sagemaker/latest/dg/images/debugger-cnn-autoencoder-plot.gif" style="width:500px; height: 310px;" class="img-fluid image" alt="this is a title">
+                            <img src="https://docs.aws.amazon.com/sagemaker/latest/dg/images/debugger-cnn-autoencoder-plot.gif" style="height: 200px" class="img-fluid image" alt="this is a title">
                             <div class="middle">
                                 <a href="https://github.com/dsgiitr/autoencoder-demo">
                                     <button type="button" class="butn github">Github</button>
@@ -190,8 +179,8 @@
                         <div class="card-body">
                             <h4>
                                 <a>
-                            Autoencoder
-                        </a>
+                                    Autoencoder
+                                </a>
                             </h4>
                             <p>
                                 Train an Autoencoder and visualise its 2D Latent Space.
@@ -199,12 +188,11 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row justify-content-around" style="padding-left: 10%;">
-                <div class="block wow fadeInLeft">
-                    <div class="card col-md-10 col-11" style="margin-top: 40px; padding: 0;">
+
+                <div class="block wow fadeInLeft" style="width: 33%;" data-wow-delay="0.5s">
+                    <div class="card col-sm-10" style="margin-top: 40px; padding: 0;">
                         <div class="card-header box">
-                            <img src="https://mlfromscratch.com/content/images/2019/12/activation-functions.gif" style="width:500px; height: 310px;" class="img-fluid image" alt="this is a title">
+                            <img src="https://mlfromscratch.com/content/images/2019/12/activation-functions.gif" style="height: 200px" class="img-fluid image" alt="this is a title">
                             <div class="middle">
                                 <a href="https://github.com/dsgiitr/vanishing-gradients-demo">
                                     <button type="button" class="butn github">Github</button>
@@ -217,8 +205,8 @@
                         <div class="card-body">
                             <h4>
                                 <a>
-                            Vanishing Gradients
-                        </a>
+                                    Vanishing Gradients
+                                </a>
                             </h4>
                             <p>
                                 Visualise how ReLU solves the problem of Vanishing Gradients.
@@ -226,11 +214,10 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="block wow fadeInLeft" data-wow-delay="0.5s">
-                    <div class="card col-md-10 col-11" style="margin-top: 40px; padding: 0;">
+                <div class="block wow fadeInLeft" style="width: 33%;" data-wow-delay="1s">
+                    <div class="card col-sm-10" style="margin-top: 40px; padding: 0;">
                         <div class="card-header box">
-                            <img src="https://miro.medium.com/max/700/1*tWvmE8FDt--msSIsGZSzXA.gif" style="width:500px; height: 310px;" class="img-fluid image" alt="this is a title">
+                            <img src="https://miro.medium.com/max/700/1*tWvmE8FDt--msSIsGZSzXA.gif" style="height: 200px" class="img-fluid image" alt="this is a title">
                             <div class="middle">
                                 <a href="https://github.com/dsgiitr/svm-demo">
                                     <button type="button" class="butn github">Github</button>
@@ -243,8 +230,8 @@
                         <div class="card-body">
                             <h4>
                                 <a>
-                            Support Vector Machines
-                        </a>
+                                    Support Vector Machines
+                                </a>
                             </h4>
                             <p>
                                 Visualise the effects of kernels and parameters on a SVM.
@@ -253,11 +240,11 @@
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-around" style="padding-bottom: 30px; padding-left: 10%;">
-                <div class="block wow fadeInLeft">
-                    <div class="card col-md-10 col-11" style="margin-top: 40px; padding: 0;">
+            <div class="row" style="padding-left: 10%;">
+                <div class="block wow fadeInLeft" style="width: 33%;">
+                    <div class="card col-sm-10" style="margin-top: 40px; padding: 0;">
                         <div class="card-header box">
-                            <img src="https://miro.medium.com/max/692/1*-Ri2rnDeXwovwu3tpTzaFw.gif" style="width:500px; height: 315px;" class="img-fluid image" alt="this is a title">
+                            <img src="https://miro.medium.com/max/692/1*-Ri2rnDeXwovwu3tpTzaFw.gif" style="height: 200px" class="img-fluid image" alt="this is a title">
                             <div class="middle">
                                 <a href="https://github.com/dsgiitr/pca-demo">
                                     <button type="button" class="butn github">Github</button>
@@ -270,8 +257,8 @@
                         <div class="card-body">
                             <h4>
                                 <a>
-                            Principal Components Analysis
-                        </a>
+                                    Principal Component Analysis
+                                </a>
                             </h4>
                             <p>
                                 Visualise the principal components of different types of datasets.
@@ -280,10 +267,10 @@
                     </div>
                 </div>
 
-                <div class="block wow fadeInLeft" data-wow-delay="0.5s">
-                    <div class="card col-md-10 col-11" style="margin-top: 40px; padding: 0;">
+                <div class="block wow fadeInLeft" style="width: 33%;" data-wow-delay="0.5s">
+                    <div class="card col-sm-10" style="margin-top: 40px; padding: 0;">
                         <div class="card-header box">
-                            <img src="https://miro.medium.com/max/1600/1*PQ8tdohapfm-YHlrRIRuOA.gif" style="width:500px; height: 315px;" class="img-fluid image" alt="this is a title">
+                            <img src="https://miro.medium.com/max/1600/1*PQ8tdohapfm-YHlrRIRuOA.gif" style="height: 200px" class="img-fluid image" alt="this is a title">
                             <div class="middle">
                                 <a href="https://github.com/dsgiitr/logistic-regression-demo">
                                     <button type="button" class="butn github">Github</button>
@@ -296,8 +283,8 @@
                         <div class="card-body">
                             <h4>
                                 <a>
-                            Logistic Regression
-                        </a>
+                                    Logistic Regression
+                                </a>
                             </h4>
                             <p>
                                 Visualise the separation of classes using Logistic Regression.
