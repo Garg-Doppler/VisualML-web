@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>VisualML</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="animate.css">
+</head>
+
+<body>
+
+    <script src="wow.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("a").on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function() {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+        new WOW().init();
+    </script>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <div id="dsg" class="navbar-brand">
+            <img src="img/dsg.png" width="60px" alt="logo">
+        </div>
+        <div>
+            <ul class="navbar-nav" id="navitems">
+                <li class="nav-item navindi">
+                    <a class="nav-link" href="#mega">Home</a>
+                </li>
+                <li class="nav-item navindi">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item navindi">
+                    <a class="nav-link" href="#demos">Demos</a>
+                </li>
+                <li class="nav-item navindi">
+                    <a class="nav-link" href="https://dsgiitr.com">DSG</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div id="mega">
+        <div class="block wow fadeInUp" data-wow-delay=".2s" id="container1">
+            <div id="logo">
+                <img width="400px" src="img/visualml.png">
+            </div>
+            <div id="tag">
+                <p>Machine Learning in the Browser</p>
+            </div>
+        </div>
+        <div id="about_nav" class="block wow fadeInUp" data-wow-delay=".2s">
+            <a class="down text-success" href="#about" style="margin-left: -5%;">
+                About
+            </a>
+            <a class="down" href="#about">
+                <i class="fa fa-angle-double-down text-success" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+    <div id="about">
+        <h1 id="heading1" class="block wow fadeInLeft">Visual Machine Learning</h1>
+        <h3 style="margin-right: 20%;margin-top: 5%; " class="block wow fadeInLeft">
+            Visual Machine Learning contains a set of Machine Learning and Deep Learning interactive visualisation demos for developing intuition. These demos are developed using TensorFlow.js and can be executed directly in your browser. This project is an extension
+            of ML examples from tfjs-examples. We implement new demos, as well as, add additional features into the ones that already existed in TFJS. Visual Machine Learning contains a set of Machine Learning and Deep Learning interactive visualisation
+            demos for developing intuition. These demos are developed using TensorFlow.js and can be executed directly in your browser. This project is an extension of ML examples from tfjs-examples. We implement new demos, as well as, add additional
+            features into the ones that already existed in TFJS.
+        </h3>
+        <div id="demos_nav" class="block wow fadeInUp" data-wow-delay=".2s">
+            <a class="down text-warning" href="#demos" style="margin-left: -5%;">
+                Demos
+            </a>
+            <a class="down" href="#about">
+                <i class="fa fa-angle-double-down text-warning" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+    <div id="demos">
+        <h1 id="heading2" class="block wow fadeInLeft">Demos</h1>
+        <div class="row">
+            <div class="block wow fadeInLeft">
+                <div class="card col-sm-10" style="margin-top: 40px; padding: 0; margin-left: 75px;">
+                    <div class="card-header box">
+                        <img src="https://predictiveprogrammer.com/wp-content/uploads/2018/06/convolve.gif" style="width:500px; height: 310px;" class="img-fluid image" alt="this is a title">
+                        <div class="middle">
+                            <a href="https://github.com/dsgiitr/mnist-cnn-demo">
+                                <button type="button" class="butn github">Github</button>
+                            </a>
+                            <a href="https://dsgiitr.github.io/mnist-cnn-demo">
+                                <button type="button" class="butn demo">Demo</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h4>
+                            <a>
+                                Convolutional Neural Network
+                            </a>
+                        </h4>
+                        <p>
+                            Train and Test a CNN and visualise its layers in 3D.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block wow fadeInLeft" data-wow-delay="0.5s">
+                <div class="card col-sm-10" style="margin-top: 40px; padding: 0; margin-left: 75px;">
+                    <div class="card-header box">
+                        <img src="https://miro.medium.com/max/1313/1*Fe6z8VdUS6laTd6Ev3EohQ.gif" class="img-fluid image" alt="this is a title">
+                        <div class="middle">
+                            <a href="https://github.com/dsgiitr/neural-style-transfer-tfjs">
+                                <button type="button" class="butn github">Github</button>
+                            </a>
+                            <a href="https://dsgiitr.github.io/neural-style-transfer-tfjs">
+                                <button type="button" class="butn demo">Demo</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h4>
+                            <a>
+                                Neural Style Transfer
+                            </a>
+                        </h4>
+                        <p>
+                            Perform Neural Style Transfer on a variety of images.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="block wow fadeInLeft">
+                <div class="card col-sm-10" style="margin-top: 40px; padding: 0; margin-left: 75px;">
+                    <div class="card-header box">
+                        <img src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/02/ANN-Graph.gif" style="width:500px; height: 310px;" class="img-fluid image" alt="this is a title">
+                        <div class="middle">
+                            <a href="https://github.com/dsgiitr/ann-demo">
+                                <button type="button" class="butn github">Github</button>
+                            </a>
+                            <a href="https://dsgiitr.github.io/ann-demo">
+                                <button type="button" class="butn demo">Demo</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h4>
+                            <a>
+                                Artificial Neural Network
+                            </a>
+                        </h4>
+                        <p>
+                            Train and Test an ANN and visualise its structure.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block wow fadeInLeft" data-wow-delay="0.5s">
+                <div class="card col-sm-10" style="margin-top: 40px; padding: 0; margin-left: 75px;">
+                    <div class="card-header box">
+                        <img src="https://docs.aws.amazon.com/sagemaker/latest/dg/images/debugger-cnn-autoencoder-plot.gif" style="width:500px; height: 310px;" class="img-fluid image" alt="this is a title">
+                        <div class="middle">
+                            <a href="https://github.com/dsgiitr/autoencoder-demo">
+                                <button type="button" class="butn github">Github</button>
+                            </a>
+                            <a href="https://dsgiitr.github.io/autoencoder-demo">
+                                <button type="button" class="butn demo">Demo</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h4>
+                            <a>
+                                Autoencoder
+                            </a>
+                        </h4>
+                        <p>
+                            Train an Autoencoder and visualise its 2D Latent Space.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="block wow fadeInLeft">
+                <div class="card col-sm-10" style="margin-top: 40px; padding: 0; margin-left: 75px;">
+                    <div class="card-header box">
+                        <img src="https://mlfromscratch.com/content/images/2019/12/activation-functions.gif" style="width:500px; height: 310px;" class="img-fluid image" alt="this is a title">
+                        <div class="middle">
+                            <a href="https://github.com/dsgiitr/vanishing-gradients-demo">
+                                <button type="button" class="butn github">Github</button>
+                            </a>
+                            <a href="https://dsgiitr.github.io/vanishing-gradients-demo">
+                                <button type="button" class="butn demo">Demo</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h4>
+                            <a>
+                                Vanishing Gradients
+                            </a>
+                        </h4>
+                        <p>
+                            Visualise how ReLU solves the problem of Vanishing Gradients.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block wow fadeInLeft" data-wow-delay="0.5s">
+                <div class="card col-sm-10" style="margin-top: 40px; padding: 0; margin-left: 75px;">
+                    <div class="card-header box">
+                        <img src="https://miro.medium.com/max/700/1*tWvmE8FDt--msSIsGZSzXA.gif" style="width:500px; height: 310px;" class="img-fluid image" alt="this is a title">
+                        <div class="middle">
+                            <a href="https://github.com/dsgiitr/svm-demo">
+                                <button type="button" class="butn github">Github</button>
+                            </a>
+                            <a href="https://dsgiitr.github.io/svm-demo">
+                                <button type="button" class="butn demo">Demo</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h4>
+                            <a>
+                                Support Vector Machines
+                            </a>
+                        </h4>
+                        <p>
+                            Visualise the effects of kernels and parameters on a SVM.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="block wow fadeInLeft">
+                <div class="card col-sm-10" style="margin-top: 40px; padding: 0; margin-left: 75px;">
+                    <div class="card-header box">
+                        <img src="https://miro.medium.com/max/692/1*-Ri2rnDeXwovwu3tpTzaFw.gif" style="width:500px; height: 315px;" class="img-fluid image" alt="this is a title">
+                        <div class="middle">
+                            <a href="https://github.com/dsgiitr/pca-demo">
+                                <button type="button" class="butn github">Github</button>
+                            </a>
+                            <a href="https://dsgiitr.github.io/pca-demo">
+                                <button type="button" class="butn demo">Demo</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h4>
+                            <a>
+                                Principal Components Analysis
+                            </a>
+                        </h4>
+                        <p>
+                            Visualise the principal components of different types of datasets.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block wow fadeInLeft" data-wow-delay="0.5s">
+                <div class="card col-sm-10" style="margin-top: 40px; padding: 0; margin-left: 75px;">
+                    <div class="card-header box">
+                        <img src="https://miro.medium.com/max/1600/1*PQ8tdohapfm-YHlrRIRuOA.gif" style="width:500px; height: 315px;" class="img-fluid image" alt="this is a title">
+                        <div class="middle">
+                            <a href="https://github.com/dsgiitr/logistic-regression-demo">
+                                <button type="button" class="butn github">Github</button>
+                            </a>
+                            <a href="https://dsgiitr.github.io/logistic-regression-demo">
+                                <button type="button" class="butn demo">Demo</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h4>
+                            <a>
+                                Logistic Regression
+                            </a>
+                        </h4>
+                        <p>
+                            Visualise the separation of classes using Logistic Regression.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

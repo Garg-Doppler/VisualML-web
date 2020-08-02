@@ -1,0 +1,219 @@
+body {
+    padding: 40px;
+}
+
+#navitems {
+    margin-left: 800px;
+}
+
+.navindi {
+    padding-left: 30px;
+}
+
+.customnav:hover {
+    color: cornsilk;
+}
+
+.customnav {
+    color: rgb(0, 200, 255);
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 40px, 0)
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 40px, 0)
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+@keyframes fadeInRight {
+    from {
+        transform: translate3d(-40px, 0, 0)
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInRight {
+    from {
+        transform: translate3d(-40px, 0, 0)
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+.animatedFadeInRight {
+    opacity: 0
+}
+
+.fadeInRight {
+    opacity: 0;
+    animation-name: fadeInRight;
+    -webkit-animation-name: fadeInRight;
+}
+
+#mega {
+    display: flex;
+    flex-direction: column;
+}
+
+#container1 {
+    display: flex;
+    flex-direction: row;
+}
+
+#logo {
+    margin-top: 14%;
+    margin-left: 15%;
+    margin-right: 5%;
+}
+
+#tag {
+    margin-top: 12%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 6em;
+    color: midnightblue;
+    text-align: center;
+}
+
+#about_nav {
+    font-size: xx-large;
+    margin-top: 5%;
+    margin-left: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#demos_nav {
+    font-size: xx-large;
+    margin-top: 5%;
+    margin-left: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#about {
+    height: 830px;
+    width: 1425px;
+    margin-top: 30px;
+    padding-top: 10%;
+    margin-left: -40px;
+    padding-left: 100px;
+    background-color: #4287f5;
+}
+
+#heading1 {
+    color: white;
+}
+
+#demos {
+    height: 2500px;
+    width: 1425px;
+    margin-top: 30px;
+    padding-top: 10%;
+    margin-left: -40px;
+    padding-left: 100px;
+    background-color: #eb7734;
+}
+
+#heading2 {
+    color: white;
+}
+
+.box {
+    position: relative;
+    width: 100%;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.box:hover .image {
+    opacity: 0.3;
+}
+
+.box:hover .middle {
+    opacity: 1;
+}
+
+.butn {
+    border: 2px solid black;
+    background-color: transparent;
+    color: black;
+    padding: 10px 28px;
+    margin: 0px 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.demo {
+    border-color: #4CAF50;
+    color: green;
+}
+
+.demo:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.github {
+    border-color: #000000;
+    color: #000000
+}
+
+.github:hover {
+    background: #000000;
+    color: white;
+}
