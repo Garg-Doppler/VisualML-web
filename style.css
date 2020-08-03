@@ -61,7 +61,7 @@ img {
     width: 120px;
     margin-top: 15px;
     margin-right: 20px;
-    margin-left: 50px;
+    margin-left: 10px;
 }
 
 .square {
@@ -140,6 +140,7 @@ img {
 .demo {
     border-color: #4CAF50;
     color: green;
+    width: 105px;
 }
 
 .demo:hover {
@@ -149,7 +150,8 @@ img {
 
 .github {
     border-color: #000000;
-    color: #000000
+    color: #000000;
+    width: 105px;
 }
 
 .github:hover {
