@@ -60,31 +60,20 @@
                 <div class="col-10 col-md-3 offset-1 block wow fadeIn" style="margin-bottom: 50px; margin-top: 50px;" id="info_div">
                     <p class="nav-text-home" id="info">Machine Learning in the Browser</p>
                 </div>
-                <div id="dependencies" class="col-10 col-md-7 offset-1" style="margin-bottom: 50px; margin-top: 50px;">
+                <div id="dependencies" class="col-10 col-md-7 offset-1 mt-auto" style="margin-bottom: 50px; margin-top: 50px; text-align: center;">
+                    <p class="depend_info" style="margin-bottom: 1em; font-size: 3em;">These libraries were extensively used to build the demos.</p>
                     <div class="row justify-content-around">
-                        <div class="card col-10 col-md-3 mb-3" style="padding: 0;">
-                            <div class="card-header" style="margin: auto; padding: 0;">
-                                <img src="img/tfjs.jpg">
-                            </div>
-                            <div class="card-body" style="padding: 0% 10%;">
-                                <p>Used to implement the main source code for all the projects</p>
-                            </div>
+                        <div class="col-md-4">
+                            <img src="img/tfjs.png" class="center" style="width: 65%; margin-bottom: 1em;">
+                            <p class="depend_info">Used to implement the main source code for most of the projects</p>
                         </div>
-                        <div class="card col-10 col-md-3 mb-3" style="padding: 0;">
-                            <div class="card-header" style="margin: auto; padding: 0;">
-                                <img src="img/plotly.jpg">
-                            </div>
-                            <div class="card-body" style="padding: 0% 10%;">
-                                <p>Used for interactive visualisations of different types of graphs</p>
-                            </div>
+                        <div class="col-md-3">
+                            <img src="img/chart.png" class="center" style="margin-bottom: 1em;">
+                            <p class="depend_info">Used for most of the standard plots.</p>
                         </div>
-                        <div class="card col-10 col-md-3 mb-3" style="padding: 0;">
-                            <div class="card-header" style="margin: auto; padding: 0;">
-                                <img src="img/chart.jpg">
-                            </div>
-                            <div class="card-body" style="padding: 0% 10%;">
-                                <p>Used for viewing real time graphs to measure changes</p>
-                            </div>
+                        <div class="col-md-4">
+                            <img src="img/plotly.png" class="center" style="margin-bottom: 1em; margin-top: 0.5em;">
+                            <p class="depend_info">Used for interactive visualisations and scatter plots.</p>
                         </div>
                     </div>
                 </div>
@@ -343,7 +332,7 @@
             $("#info_div").css("display", "block");
             $("#info").removeClass();
             $("#info").addClass("nav-text-about");
-            $("#info").html("A bunch of interactive visualisations of various Machine Learning Models.")
+            $("#info").html("VisualML aims at helping people visualise Machine Learning Algorithms. Interactive Visualisations help build intuition, and thus, better understanding of the algorithm's working. The Project has been built primarily in JavaScript alongwith some libraries.")
         });
         $("#tools").click(function() {
             $("#demo_a").removeClass("active");

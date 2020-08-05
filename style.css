@@ -138,7 +138,7 @@ Phones: iPhone SE
         margin-left: 2%;
     }
     .nav-text-about {
-        font-size: 2.5em;
+        font-size: 0.5em;
         color: floralwhite;
         text-align: center;
         margin-left: 2%;
@@ -165,7 +165,7 @@ Phones: iPhone SE
         opacity: 95%;
     }
     .nav-text-about {
-        font-size: 3em;
+        font-size: 1em;
         color: floralwhite;
         text-align: center;
     }
@@ -188,7 +188,7 @@ Phones: iPhone SE
         opacity: 95%;
     }
     .nav-text-about {
-        font-size: 3em;
+        font-size: 1em;
         color: floralwhite;
         text-align: center;
     }
@@ -212,7 +212,7 @@ Phones: iPhone SE
         opacity: 95%;
     }
     .nav-text-about {
-        font-size: 3em;
+        font-size: 1em;
         color: floralwhite;
         text-align: center;
         margin-left: -1%;
@@ -237,7 +237,7 @@ Phones: iPhone SE
         opacity: 95%;
     }
     .nav-text-about {
-        font-size: 3em;
+        font-size: 1em;
         color: floralwhite;
         text-align: center;
         margin-left: -1%;
@@ -262,7 +262,7 @@ Phones: iPhone SE
         opacity: 95%;
     }
     .nav-text-about {
-        font-size: 3em;
+        font-size: 1em;
         color: floralwhite;
         text-align: center;
         margin-left: 2.5%;
@@ -289,7 +289,7 @@ Phones: iPhone SE
         opacity: 95%;
     }
     .nav-text-about {
-        font-size: 2em;
+        font-size: 0.5em;
         color: floralwhite;
         text-align: center;
         width: 400px;
@@ -315,7 +315,7 @@ Phones: iPhone SE
         opacity: 95%;
     }
     .nav-text-about {
-        font-size: 3em;
+        font-size: 1em;
         color: floralwhite;
         text-align: center;
         margin-left: 2.5%;
@@ -342,7 +342,7 @@ Phones: iPhone SE
         opacity: 95%;
     }
     .nav-text-about {
-        font-size: 2em;
+        font-size: 0.5em;
         color: floralwhite;
         text-align: center;
         margin-left: 0%;
@@ -373,7 +373,7 @@ Phones: iPhone SE
         opacity: 95%;
     }
     .nav-text-about {
-        font-size: 2.5em;
+        font-size: 0.5em;
         color: floralwhite;
         text-align: center;
         margin-left: 0%;
@@ -408,7 +408,7 @@ Tablet1: landscape
         margin-left: 30%;
     }
     .nav-text-about {
-        font-size: 3em;
+        font-size: 1em;
         color: floralwhite;
         text-align: center;
         width: 600px;
@@ -444,7 +444,7 @@ Tablet2: landscape
         margin-top: 10%;
     }
     .nav-text-about {
-        font-size: 3em;
+        font-size: 1em;
         color: floralwhite;
         text-align: center;
         width: 600px;
@@ -481,7 +481,7 @@ Tablet3: landscape
         margin-top: 5%;
     }
     .nav-text-about {
-        font-size: 4em;
+        font-size: 2em;
         color: floralwhite;
         text-align: center;
         width: 800px;
@@ -513,7 +513,7 @@ Tablet3: landscape
         margin-top: 5%;
     }
     .nav-text-about {
-        font-size: 5em;
+        font-size: 3em;
         color: floralwhite;
         text-align: center;
         width: 1000px;
@@ -545,7 +545,7 @@ Tablet3: landscape
         margin-top: 5%;
     }
     .nav-text-about {
-        font-size: 3em;
+        font-size: 0.5em;
         color: floralwhite;
         text-align: center;
         width: 600px;
@@ -564,4 +564,18 @@ Tablet3: landscape
     border-color: #000000;
     color: #000000;
     margin-left: 15%;
+}
+
+.depend_info {
+    text-align: center;
+    font-family: 'Exo', sans-serif;
+    font-size: 1.2em;
+    color: white;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
